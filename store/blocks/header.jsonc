@@ -1,0 +1,269 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop",
+      "sticky-layout#desktopMenu"
+    ]
+  },
+
+
+
+
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#desktop"
+    ]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+
+  "sticky-layout#desktopMenu": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#desktopMenu"
+    ]
+  },
+  "flex-layout.row#desktopMenu": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#websites": {   //Itens do Menu
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "promoção",
+            "text": "PROMOÇÃO"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "CORINTHIANS",
+            "text": "CORINTHIANS"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "PALMEIRAS",
+            "text": "PALMEIRAS"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "SIGNOS",
+            "text": "SIGNOS"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "DIVERTIDOS",
+            "text": "DIVERTIDOS"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "7MARAVILHAS",
+            "text": "7 MARAVILHAS"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "GUERREIROS",
+            "text": "GUERREIROS"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "ALBUM1",
+            "text": "ALBUM 1"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "ALBUM2",
+            "text": "ALBUM 2"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "ALBUM3",
+            "text": "ALBUM 3"
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+      ]
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "150"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": []
+  }
+}

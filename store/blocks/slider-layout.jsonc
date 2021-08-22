@@ -1,0 +1,34 @@
+{
+    "slider-layout#home": {
+      "children": [
+        "image#brand1",
+        "image#brand2"
+      ],
+      "props": {
+        "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel",
+        "autoplay": {
+          "timeout": 7000,
+          "stopOnHover": true,
+          "infinite": true
+        }
+        
+      }
+    },
+    "image#brand1": {
+      "props": {
+        "src": "assets/banner-wood.png"
+      }
+    },
+    "image#brand2": {
+      "props": {
+        "src": "assets/guerreiros.png"
+      }
+    
+    }
+  }

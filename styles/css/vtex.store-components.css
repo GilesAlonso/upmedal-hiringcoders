@@ -1,0 +1,54 @@
+:global(.vtex-sticky-layout-0-x-container--sticky-header) {
+    background: #212121;
+    color: white
+  }
+.searchBarContainer {
+  background-color: transparent;
+  background: transparent;
+  width: 500px;
+
+}
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-bottom: thin solid white;
+}
+
+.searchBarContainer :global(.vtex-input__sufix) {
+  background: transparent;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background: transparent;
+  color: #59ff00;
+}
+.slider-layout {
+  background: #303030;
+  position: absolute;
+  max-width: 70%;
+  height: 400px;
+}
+.sliderLayoutContainer--carousel {
+  background: #303030;
+}
+.slideChildrenContainer--carousel {
+  background: #303030;
+}
+
+
+
+:global(.vtex-menu-2-x-styledLinkContent) {
+  color: white;
+}
+.vtex-store-components-3-x-imageElement {
+  position: absolute;
+  max-width: 70%;
+  border-radius: 50px;
+}
+
+.imageElement {
+  max-width: 70%;
+  border-radius: 30px;
+}
+
+
+
